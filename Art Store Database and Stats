@@ -1,0 +1,25 @@
+Create a database for a store of yoyr choosing
+
+CREATE TABLE store ( id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, dollars INTEGER, aisle INTEGER);
+
+INSERT INTO store VALUES (1, "sharpies", 50, 6, 1 );
+INSERT INTO store VALUES (2, "wooden pencils", 100, 2, 1);
+INSERT INTO store VALUES (3, "mechanical pencils", 150, 5, 1);
+INSERT INTO store VALUES (4, "paint", 30, 15, 2);
+INSERT INTO store VALUES (5, "easel", 5, 30, 2);
+INSERT INTO store VALUES (6, "paint brush", 50, 12, 2);
+INSERT INTO store VALUES (7, "canvas", 20, 25, 2);
+INSERT INTO store VALUES (8, "paint by number", 6, 1, 2); 
+INSERT INTO store VALUES (9, "yarn", 100, 5, 3);
+INSERT INTO store VALUES (10, "crochet hooks", 100, 5, 3);
+INSERT INTO store VALUES (11, "embroidery floss", 500, 2, 3);
+INSERT INTO store VALUES ( 12, "crotchet handbook", 10, 15, 3);
+INSERT INTO store VALUES (13, "diy handbook", 10,15,3);
+INSERT INTO store VALUES (14, "pencil sharpener", 20, 3, 1);
+INSERT INTO store VALUES (15, "pencil bag", 20, 5, 1);
+
+--display the database ordered by price
+SELECT * FROM store ORDER BY dollars;
+
+--What is the most money a customer would spend on one product?
+SELECT MAX(dollars) "name";
